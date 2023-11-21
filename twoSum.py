@@ -31,4 +31,32 @@ class Solution(object):
     return[]
 
 #This solution works but it uses 2121 ms to run and uses 14.27 mb to work. Lets try using a hash map.
-      
+
+    class Solution(object):
+        def twoSum(self, nums, target):
+
+          #First create your hash map
+          map = {}
+
+          #Make your len variable
+          length = len(nums)
+
+          #now we build onto out hash table using a for loop to cycle through the array.
+            for n in range(length)
+
+                #this may look scary so lets break it down. We are using n to find our place in the array, which is named nums. Then to add this integer to the hash map we use map. So adding it together makes:
+                map[num[n]] = n
+
+            #The hash map is made so now we will look for the second number find which integers in the array make up the target.
+            for n in range(length)
+
+                #using a varibale called second_num we will subtract the our spot in the array from out targer to find the remainder.
+                second_num = target - nums[n]
+
+                #using an if we search for if our variable second is in the map and the location of the second variable is not equal to n we then retrun the solution.
+                if second in map and map[second] != n:
+                    return[i, map[second]
+
+        return []
+
+#This solution runs signifigantly faster at 45ms but still uses the same memory so I will settle for this solution for now.
